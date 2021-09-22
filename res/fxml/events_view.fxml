@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="eventsview_border_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meetup.app.controller.EventController">
+    <center>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="650.0">
+            <bottom>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="647.0" BorderPane.alignment="CENTER">
+                    <BorderPane.margin>
+                        <Insets left="65.0" />
+                    </BorderPane.margin>
+                    <children>
+                        <FlowPane hgap="30.0" layoutX="-10.0" layoutY="105.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="164.0" prefWidth="636.0">
+                            <children>
+                        <TitledPane fx:id="titledpane1" collapsible="false" onMouseClicked="#titledPane1Clicked" prefHeight="148.0" prefWidth="176.0" textAlignment="CENTER">
+                           <content>
+                                      <Pane>
+                                          <children>
+                                              <Separator layoutX="12.0" layoutY="40.0" prefHeight="10.0" prefWidth="142.0" />
+                                              <Label fx:id="event_name_label1" alignment="TOP_CENTER" layoutX="1.0" layoutY="14.0" prefHeight="22.0" prefWidth="164.0" textFill="#616161">
+                                                  <font>
+                                                      <Font size="16.0" />
+                                                  </font>
+                                              </Label>
+                                              <ImageView fitHeight="47.0" fitWidth="83.0" layoutX="-5.0" layoutY="50.0" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" pickOnBounds="true">
+                                                  <image>
+                                                      <Image url="@../img/location_pointer.png" />
+                                                  </image>
+                                              </ImageView>
+                                              <Label fx:id="location_name_label1" alignment="TOP_CENTER" layoutX="20.0" layoutY="66.0" prefHeight="22.0" prefWidth="127.0" textFill="#797878">
+                                                  <font>
+                                                      <Font name="Arial" size="11.0" />
+                                                  </font>
+                                              </Label>
+                                          </children>
+                                      </Pane>
+                           </content>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </TitledPane>
+                        <TitledPane fx:id="titledpane2" collapsible="false" layoutX="10.0" layoutY="10.0" onMouseClicked="#titledPane2Clicked" prefHeight="148.0" prefWidth="176.0" textAlignment="CENTER">
+                           <content>
+                              <Pane onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited">
+                                 <children>
+                                    <Separator layoutX="12.0" layoutY="40.0" prefHeight="10.0" prefWidth="142.0" />
+                                    <Label fx:id="event_name_label2" alignment="TOP_CENTER" layoutX="1.0" layoutY="14.0" prefHeight="22.0" prefWidth="164.0" textFill="#616161">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="46.0" fitWidth="83.0" layoutX="-5.0" layoutY="50.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../img/location_pointer.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="location_name_label2" alignment="TOP_CENTER" layoutX="20.0" layoutY="66.0" prefHeight="22.0" prefWidth="127.0" textFill="#797878">
+                                       <font>
+                                          <Font name="Arial" size="11.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </content>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </TitledPane>
+                        <TitledPane fx:id="titledpane3" collapsible="false" layoutX="10.0" layoutY="10.0" onMouseClicked="#titledPane3Clicked" prefHeight="148.0" prefWidth="176.0" textAlignment="CENTER">
+                           <content>
+                              <Pane onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited">
+                                 <children>
+                                    <Separator layoutX="12.0" layoutY="40.0" prefHeight="10.0" prefWidth="142.0" />
+                                    <Label fx:id="event_name_label3" alignment="TOP_CENTER" layoutX="1.0" layoutY="14.0" prefHeight="22.0" prefWidth="164.0" textFill="#636363">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="46.0" fitWidth="83.0" layoutX="-5.0" layoutY="50.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../img/location_pointer.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="location_name_label3" alignment="TOP_CENTER" layoutX="20.0" layoutY="66.0" prefHeight="22.0" prefWidth="127.0" textFill="#797878">
+                                       <font>
+                                          <Font name="Arial" size="11.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </content>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </TitledPane>
+                            </children>
+                        </FlowPane>
+                      <FlowPane hgap="260.0" layoutX="-36.0" layoutY="26.0" prefHeight="51.0" prefWidth="680.0">
+                          <children>
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="551.0">
+                                  <children>
+                                      <Label layoutX="37.0" prefHeight="20.0" prefWidth="99.0" text="Events near " textFill="#575555">
+                                          <font>
+                                              <Font size="14.0" />
+                                          </font>
+                                      </Label>
+                                      <Label layoutX="37.0" layoutY="16.0" prefHeight="20.0" prefWidth="256.0" text="See what's happening soon in your area." textFill="#979393" />
+                                      <Label fx:id="currentLocationLabel" layoutX="117.0" prefHeight="20.0" prefWidth="139.0" textFill="#575555">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="see_all_events_label" layoutX="488.0" onMouseClicked="#seeAllEventClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="20.0" prefWidth="79.0" text="See all events" textFill="#656565" underline="true" />
+                                  </children>
+                              </Pane>
+                          </children>
+                      </FlowPane>
+                  <Label fx:id="no_events_found_label" layoutX="257.0" layoutY="304.0" prefHeight="29.0" prefWidth="94.0" text="No events found!" textFill="#e89898" visible="false" />
+                    </children>
+                </Pane>
+            </bottom>
+         <top>
+            <Pane prefHeight="86.0" prefWidth="607.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="157.0" layoutY="-11.0" prefHeight="29.0" prefWidth="305.0" text="See who's hosting local events for all the things you love." textFill="#979393" />
+                  <Label layoutX="261.0" layoutY="-23.0" text="Discover events" textFill="#575555">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="searchbox_text_field" layoutX="139.0" layoutY="14.0" onKeyTyped="#onKeyTyped" prefHeight="26.0" prefWidth="341.0" promptText="Search event" />
+                  <Button fx:id="search_button" alignment="TOP_CENTER" contentDisplay="CENTER" disable="true" layoutX="492.0" layoutY="16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#searchButtonOnAction" prefHeight="22.0" prefWidth="52.0" text="Search">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Separator layoutX="-30.0" layoutY="66.0" prefHeight="12.0" prefWidth="711.0" />
+               </children>
+            </Pane>
+         </top>
+        </BorderPane>
+    </center>
+   <top>
+      <ToolBar maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="712.0" BorderPane.alignment="CENTER">
+         <items>
+            <FlowPane hgap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="695.0">
+               <children>
+                  <Label disable="true" text="Home" textFill="#656565" underline="true" />
+                  <Label text="|" textFill="#6e6e6e" />
+                  <Label layoutX="30.0" layoutY="10.0" onMouseClicked="#changeLocationClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" text="Change your location" textFill="#656565" underline="true" />
+                  <Label layoutX="10.0" layoutY="10.0" onMouseClicked="#createEventClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" text="Create new event" textFill="#656565" underline="true" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </FlowPane>
+         </items>
+      </ToolBar>
+   </top>
+</BorderPane>
